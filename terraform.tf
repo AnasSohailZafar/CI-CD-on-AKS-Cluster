@@ -10,15 +10,15 @@ terraform {
     }
   }
   backend "azurerm" {
-    subscription_id      = "29e44bcb-77c5-41cf-a0ca-50f415f078b2"
-    resource_group_name  = "rg-terraformstate-prod"
-    storage_account_name = "ahlensstterraform01"
+    subscription_id      = ""
+    resource_group_name  = ""
+    storage_account_name = ""
     container_name       = "sandbox"
-    key                  = "Test/terraform.tfstate"
+    key                  = ""
   }
 }
 
 provider "azurerm" {
   features {}
-  subscription_id = "df0a020f-3e1c-4b42-938f-165c9c7f96ce"
+  subscription_id = ""
 }
